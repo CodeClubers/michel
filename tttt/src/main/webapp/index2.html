@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta content="charset=utf-8">
+	<title>FlexSlider 2</title>
+
+
+
+
+
+
+	<!-- Modernizr -->
+  <script src="resources/js/modernizr.js"></script>
+
+</head>
+<body >
+
+
+
+	<div id="main" role="main">
+      <section class="slider">
+        <div class="flexslider">
+          <ul class="slides">
+            <li>
+  	    	    <img src="images/kitchen_adventurer_cheesecake_brownie.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="images/kitchen_adventurer_lemon.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="images/kitchen_adventurer_donut.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="images/kitchen_adventurer_caramel.jpg" />
+  	    		</li>
+          </ul>
+        </div>
+      </section>
+      <aside>
+        <div class="cf">
+          <h3>Basic Slider</h3>
+          <ul class="toggle cf">
+            <li class="js"><a href="#view-js">JS</a></li>
+            <li class="html"><a href="#view-html">HTML</a></li>
+          </ul>
+        </div>
+        <div id="view-js" class="code">
+          <pre class="brush: js; toolbar: false; gutter: false;">
+            // Can also be used with $(document).ready()
+            $(window).load(function() {
+              $('.flexslider').flexslider({
+                animation: "slide"
+              });
+            });
+          </pre>
+        </div>
+        <div id="view-html" class="code">
+          <pre class="brush: xml; toolbar: false; gutter: false;">
+            &lt;!-- Place somewhere in the &lt;body&gt; of your page -->
+            &lt;div class="flexslider">
+              &lt;ul class="slides">
+                &lt;li>
+                  &lt;img src="slide1.jpg" />
+                &lt;/li>
+                &lt;li>
+                  &lt;img src="slide2.jpg" />
+                &lt;/li>
+                &lt;li>
+                  &lt;img src="slide3.jpg" />
+                &lt;/li>
+                &lt;li>
+                  &lt;img src="slide4.jpg" />
+                &lt;/li>
+              &lt;/ul>
+            &lt;/div>
+          </pre>
+        </div>
+      </aside>
+    </div>
+
+
+
+  <!-- jQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+
+  <!-- FlexSlider -->
+  <script defer src="resources/js/jquery.flexslider.js"></script>
+
+  <script type="text/javascript">
+
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+
+        }
+      });
+    });
+  </script>
+
+
+
+
+
+
+</body>
+</html>

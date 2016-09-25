@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>צור קשר</title>
+    <link rel='stylesheet' href='resources/css/main.css'/>
+</head>
+
+<body>
+<div class="header">
+    <div class="language-menu"><a class="language-item">ENG</a>|<a class="language-item selected">עבר</a></div>
+    <img src="resources/images/logo.png" class="logo"/>
+
+</div>
+<div class="main-menu">
+    <ul class="main-menu-list">
+        <li class="main-menu-item"><a class="main-menu-item-ref" href="index.html">ראשי</a></li>
+        <li class="main-menu-item"><a class="main-menu-item-ref" href="about.html">על הבית</a></li>
+        <li class="main-menu-item"><a class="main-menu-item-ref" href="rooms.html">חדרים</a></li>
+        <li class="main-menu-item"><a class="main-menu-item-ref" href="orders.html">הזמנות</a></li>
+        <li class="main-menu-item"><a class="main-menu-item-ref" href="todo.html">מה עושים?</a></li>
+        <li class="main-menu-item"><a class="main-menu-item-ref" href="galary.html">גלריה</a></li>
+        <li class="main-menu-item"><a class="main-menu-item-ref" href="visitors.html">מבקרים</a></li>
+        <li class="main-menu-item"><a class="main-menu-item-ref selected" href="contactus.html">צרו קשר</a></li>
+    </ul>
+</div>
+
+
+<div style="height: 50px;"></div>
+<div class="content-section">
+
+    <div class="content-section-line">
+        <div class="contact-us">
+
+            <input class="contact-us-input" name="name" placeholder="שם">
+            <input class="contact-us-input" name="phone" placeholder="טלפון">
+            <input class="contact-us-input" name="mail" placeholder="דואר אלקטרוני">
+            <input class="contact-us-input text" type="text" name="remarks" placeholder="הערות">
+            <div><button type="button" class="section-button">שלח</button></div> 
+        </div>
+        <div id="map"></div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="content-section">
+        <div class="content-section-line">
+            <div class="footer-block">
+                <div class="footer-block-title">חדרים</div>
+                <ul>
+                    <li>חדר סמירה</li>
+                    <li>חדר עפאף</li>
+                    <li>חדר סיהאם</li>
+                    <li>חדר גריס</li>
+                    <li>חדר רוז</li>
+                    <li>חדר קרסטין</li>
+                    <li>חדר אלין</li>
+                    <li>חדר קיתי</li>
+                </ul>
+            </div>
+            <div class="footer-block">
+                <div class="footer-block-title">מה ניתן לעשות בנצרת?</div>
+                <ul>
+                    <li>אל מתחת לעיר נצרת</li>
+                    <li>לאכול בנצרת</li>
+                    <li>משהו מתוק</li>
+                    <li>סיור בשוק נצרת</li>
+                    <li>שביל ישו</li>
+                    <li>נצרת הכפר שהיה</li>
+                </ul>
+            </div>
+            <div class="footer-block">
+                <div class="footer-block-title">צור קשר</div>
+                <ul>
+                    <li>טלפון: 04-6554129</li>
+                    <li>פקס: 04-6573416</li>
+                    <li>כתובת: רחוב 6098 בית מס׳ 10 נצרת</li>
+                    <li>דוא״ל: michelhouse.naz@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+<script>
+    function initMap() {
+        var uluru = {lat: 32.706097, lng: 35.301316};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 14,
+            center: uluru
+        });
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+        });
+    }
+
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDa2zlXQQy4dIs9mnP1OOVQuLb-Eq5cS7A&callback=initMap"></script>
+
+</body>
+</html>
